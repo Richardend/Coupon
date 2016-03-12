@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CouponDBModelStoreContainer" CdmEntityContainer="CouponDBEntities">
+    <EntitySetMapping Name="Alliances">
+      <EntityTypeMapping TypeName="CouponDBModel.Alliance">
+        <MappingFragment StoreEntitySet="Alliance">
+          <ScalarProperty Name="AllianceID" ColumnName="AllianceID" />
+          <ScalarProperty Name="AllianceName" ColumnName="AllianceName" />
+          <ScalarProperty Name="AllianceContract" ColumnName="AllianceContract" />
+          <ScalarProperty Name="AIDStatus" ColumnName="AIDStatus" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllianceSIDs">
+      <EntityTypeMapping TypeName="CouponDBModel.AllianceSID">
+        <MappingFragment StoreEntitySet="AllianceSID">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="AllianceID" ColumnName="AllianceID" />
+          <ScalarProperty Name="SIDName" ColumnName="SIDName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="SIDStatus" ColumnName="SIDStatus" />
+          <ScalarProperty Name="RequestKey" ColumnName="RequestKey" />
+          <ScalarProperty Name="RequestRules" ColumnName="RequestRules" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="CouponDBModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityEn" ColumnName="CityEn" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="CouponDBModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryEn" ColumnName="CountryEn" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="CouponDBModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="ActualAmount" ColumnName="ActualAmount" />
+          <ScalarProperty Name="ActualCurrencyID" ColumnName="ActualCurrencyID" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="costCurrencyID" ColumnName="costCurrencyID" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_CardCode">
+      <EntityTypeMapping TypeName="CouponDBModel.Order_CardCode">
+        <MappingFragment StoreEntitySet="Order_CardCode">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Code">
+      <EntityTypeMapping TypeName="CouponDBModel.Order_Code">
+        <MappingFragment StoreEntitySet="Order_Code">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentInfoes">
+      <EntityTypeMapping TypeName="CouponDBModel.PaymentInfo">
+        <MappingFragment StoreEntitySet="PaymentInfo">
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="PaymentName" ColumnName="PaymentName" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="CouponDBModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ProvinceEn" ColumnName="ProvinceEn" />
+          <ScalarProperty Name="ProvinceName" ColumnName="ProvinceName" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resources">
+      <EntityTypeMapping TypeName="CouponDBModel.Resource">
+        <MappingFragment StoreEntitySet="Resource">
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="StoreType" ColumnName="StoreType" />
+          <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+          <ScalarProperty Name="AreaType" ColumnName="AreaType" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="PriceCurrencyID" ColumnName="PriceCurrencyID" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="SalePriceCurrencyID" ColumnName="SalePriceCurrencyID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resource_SID_List">
+      <EntityTypeMapping TypeName="CouponDBModel.Resource_SID_List">
+        <MappingFragment StoreEntitySet="Resource_SID_List">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="ResSIDStatus" ColumnName="ResSIDStatus" />
+          <ScalarProperty Name="SettlementPrice" ColumnName="SettlementPrice" />
+          <ScalarProperty Name="SettlementPriceCurrencyID" ColumnName="SettlementPriceCurrencyID" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resource_Store">
+      <EntityTypeMapping TypeName="CouponDBModel.Resource_Store">
+        <MappingFragment StoreEntitySet="Resource_Store">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceCurrencies">
+      <EntityTypeMapping TypeName="CouponDBModel.ResourceCurrency">
+        <MappingFragment StoreEntitySet="ResourceCurrency">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceRepertories">
+      <EntityTypeMapping TypeName="CouponDBModel.ResourceRepertory">
+        <MappingFragment StoreEntitySet="ResourceRepertory">
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="RepertoryNum" ColumnName="RepertoryNum" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceTypes">
+      <EntityTypeMapping TypeName="CouponDBModel.ResourceType">
+        <MappingFragment StoreEntitySet="ResourceType">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreInfoes">
+      <EntityTypeMapping TypeName="CouponDBModel.StoreInfo">
+        <MappingFragment StoreEntitySet="StoreInfo">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="StoreAdrr" ColumnName="StoreAdrr" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="AreaType" ColumnName="AreaType" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="LongitudeGMap" ColumnName="LongitudeGMap" />
+          <ScalarProperty Name="LatitudeGMap" ColumnName="LatitudeGMap" />
+          <ScalarProperty Name="LongitudeBMap" ColumnName="LongitudeBMap" />
+          <ScalarProperty Name="LatitudeBMap" ColumnName="LatitudeBMap" />
+          <ScalarProperty Name="DataChange_LastTime" ColumnName="DataChange_LastTime" />
+          <ScalarProperty Name="DataChange_CreateTime" ColumnName="DataChange_CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

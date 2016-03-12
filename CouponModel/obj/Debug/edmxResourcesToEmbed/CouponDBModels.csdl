@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CouponDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alliance">
+    <Key>
+      <PropertyRef Name="AllianceID" />
+    </Key>
+    <Property Name="AllianceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AllianceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AllianceContract" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AIDStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="AllianceSID">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="AllianceID" />
+    </Key>
+    <Property Name="SID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AllianceID" Type="Int32" Nullable="false" />
+    <Property Name="SIDName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SIDStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RequestKey" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RequestRules" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProvinceID" Type="Byte" Nullable="false" />
+    <Property Name="CountryID" Type="Byte" Nullable="false" />
+    <Property Name="CityEn" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryEn" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ResourceID" Type="Int32" Nullable="false" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <Property Name="ActualAmount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="ActualCurrencyID" Type="Byte" Nullable="false" />
+    <Property Name="cost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="costCurrencyID" Type="Byte" Nullable="false" />
+    <Property Name="PaymentID" Type="Byte" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Order_CardCode">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int64" Nullable="false" />
+    <Property Name="CardCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Order_Code">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="CardNo" />
+    </Key>
+    <Property Name="OrderID" Type="Int64" Nullable="false" />
+    <Property Name="CardNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="PaymentInfo">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="Byte" Nullable="false" />
+    <Property Name="PaymentName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="ProvinceID" />
+    </Key>
+    <Property Name="ProvinceID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryID" Type="Byte" Nullable="false" />
+    <Property Name="ProvinceEn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProvinceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="ResourceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeID" Type="Byte" Nullable="false" />
+    <Property Name="StoreType" Type="Byte" Nullable="false" />
+    <Property Name="ShowName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AreaType" Type="Byte" Nullable="false" />
+    <Property Name="CountryID" Type="Byte" Nullable="false" />
+    <Property Name="ProvinceID" Type="Byte" Nullable="false" />
+    <Property Name="CityID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="PriceCurrencyID" Type="Byte" Nullable="false" />
+    <Property Name="SalePrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="SalePriceCurrencyID" Type="Byte" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IsEnable" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Resource_SID_List">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="SID" Type="Int32" Nullable="false" />
+    <Property Name="ResourceID" Type="Int32" Nullable="false" />
+    <Property Name="ResSIDStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SettlementPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="SettlementPriceCurrencyID" Type="Byte" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Resource_Store">
+    <Key>
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="ResourceID" Type="Int32" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="ResourceCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyName" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="ResourceRepertory">
+    <Key>
+      <PropertyRef Name="ResourceID" />
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="ResourceID" Type="Int32" Nullable="false" />
+    <Property Name="SID" Type="Int32" Nullable="false" />
+    <Property Name="RepertoryNum" Type="Int32" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="ResourceType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="StoreInfo">
+    <Key>
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="StoreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreAdrr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StoreName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AreaType" Type="Byte" Nullable="false" />
+    <Property Name="CountryID" Type="Byte" Nullable="false" />
+    <Property Name="ProvinceID" Type="Byte" Nullable="false" />
+    <Property Name="CityID" Type="Int32" Nullable="false" />
+    <Property Name="LongitudeGMap" Type="Decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="LatitudeGMap" Type="Decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="LongitudeBMap" Type="Decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="LatitudeBMap" Type="Decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataChange_CreateTime" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="CouponDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alliances" EntityType="Self.Alliance" />
+    <EntitySet Name="AllianceSIDs" EntityType="Self.AllianceSID" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Order_CardCode" EntityType="Self.Order_CardCode" />
+    <EntitySet Name="Order_Code" EntityType="Self.Order_Code" />
+    <EntitySet Name="PaymentInfoes" EntityType="Self.PaymentInfo" />
+    <EntitySet Name="Provinces" EntityType="Self.Province" />
+    <EntitySet Name="Resources" EntityType="Self.Resource" />
+    <EntitySet Name="Resource_SID_List" EntityType="Self.Resource_SID_List" />
+    <EntitySet Name="Resource_Store" EntityType="Self.Resource_Store" />
+    <EntitySet Name="ResourceCurrencies" EntityType="Self.ResourceCurrency" />
+    <EntitySet Name="ResourceRepertories" EntityType="Self.ResourceRepertory" />
+    <EntitySet Name="ResourceTypes" EntityType="Self.ResourceType" />
+    <EntitySet Name="StoreInfoes" EntityType="Self.StoreInfo" />
+  </EntityContainer>
+</Schema>

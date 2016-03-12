@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CouponDB2Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="ResourceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="CurrencyID" Type="tinyint" Nullable="false" />
+    <Property Name="LastUpdateTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CurrencyName" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="ResourceRepertory">
+    <Key>
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+    <Property Name="RepertoryNum" Type="int" Nullable="false" />
+    <Property Name="LastUpdateTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CouponDB2ModelsStoreContainer">
+    <EntitySet Name="Resource" EntityType="Self.Resource" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResourceCurrency" EntityType="Self.ResourceCurrency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResourceRepertory" EntityType="Self.ResourceRepertory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResourceType" EntityType="Self.ResourceType" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

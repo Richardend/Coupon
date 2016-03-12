@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39622918-5A02-4C4E-94F9-F9CF5B477F86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CouponModel</RootNamespace>
+    <AssemblyName>CouponModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alliance.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllianceSID.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CouponDBModels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CouponDBModels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CouponDBModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CouponDBModels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CouponDBModels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ResponseDTO\BaseResponseDTO.cs" />
+    <Compile Include="DTO\ResponseDTO\ResourceDTO.cs" />
+    <Compile Include="Order.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_CardCode.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Code.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentInfo.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Province.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceCurrency.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceRepertory.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceType.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_SID_List.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_Store.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreInfo.cs">
+      <DependentUpon>CouponDBModels.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="CouponDBModels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CouponDBModels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="CouponDBModels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CouponDBModels.edmx</DependentUpon>
+      <LastGenOutput>CouponDBModels.Context.cs</LastGenOutput>
+    </None>
+    <None Include="CouponDBModels.edmx.diagram">
+      <DependentUpon>CouponDBModels.edmx</DependentUpon>
+    </None>
+    <None Include="CouponDBModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CouponDBModels.edmx</DependentUpon>
+      <LastGenOutput>CouponDBModels.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\RequestDTO\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

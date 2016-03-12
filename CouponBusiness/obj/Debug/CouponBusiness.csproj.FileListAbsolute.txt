@@ -1,0 +1,18 @@
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\obj\Debug\CouponBusiness.csprojResolveAssemblyReference.cache
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Debug\CouponBusiness.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Debug\CouponBusiness.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Debug\CouponModel.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Debug\EntityFramework.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Debug\CouponModel.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Debug\EntityFramework.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\obj\Debug\CouponBusiness.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\obj\Debug\CouponBusiness.pdb
+D:\Azure相关内容\Coupon\CouponBusiness\bin\Debug\CouponBusiness.dll
+D:\Azure相关内容\Coupon\CouponBusiness\bin\Debug\CouponBusiness.pdb
+D:\Azure相关内容\Coupon\CouponBusiness\bin\Debug\CouponModel.dll
+D:\Azure相关内容\Coupon\CouponBusiness\bin\Debug\EntityFramework.dll
+D:\Azure相关内容\Coupon\CouponBusiness\bin\Debug\CouponModel.pdb
+D:\Azure相关内容\Coupon\CouponBusiness\bin\Debug\EntityFramework.xml
+D:\Azure相关内容\Coupon\CouponBusiness\obj\Debug\CouponBusiness.csprojResolveAssemblyReference.cache
+D:\Azure相关内容\Coupon\CouponBusiness\obj\Debug\CouponBusiness.dll
+D:\Azure相关内容\Coupon\CouponBusiness\obj\Debug\CouponBusiness.pdb

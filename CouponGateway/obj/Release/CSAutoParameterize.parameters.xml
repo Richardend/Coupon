@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="CouponDBEntities-Web.config Connection String" description="CouponDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/CouponDBModels.csdl|res://*/CouponDBModels.ssdl|res://*/CouponDBModels.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=g00xqhpr72.database.chinacloudapi.cn,1433;initial catalog=CouponDB;persist security info=True;user id=xialingxu@g00xqhpr72;password=1qw2!QW@;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\JeffreyXu\\Documents\\Visual\ Studio\ 2013\\Projects\\2016年创业项目源代码\\Coupon\\CouponGateway\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CouponDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

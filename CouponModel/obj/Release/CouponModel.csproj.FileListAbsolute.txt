@@ -1,0 +1,9 @@
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\CouponModel.dll.config
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\CouponModel.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\CouponModel.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\EntityFramework.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\EntityFramework.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\obj\Release\CouponModel.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponModel\obj\Release\CouponModel.pdb

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponGateway", "CouponGateway\CouponGateway.csproj", "{EBD9CC67-1195-437B-B0B4-08CE13CAA26E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponModel", "CouponModel\CouponModel.csproj", "{39622918-5A02-4C4E-94F9-F9CF5B477F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponBusiness", "CouponBusiness\CouponBusiness.csproj", "{45C73498-C133-4B84-B19F-95377DEB7465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBD9CC67-1195-437B-B0B4-08CE13CAA26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD9CC67-1195-437B-B0B4-08CE13CAA26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD9CC67-1195-437B-B0B4-08CE13CAA26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD9CC67-1195-437B-B0B4-08CE13CAA26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39622918-5A02-4C4E-94F9-F9CF5B477F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39622918-5A02-4C4E-94F9-F9CF5B477F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39622918-5A02-4C4E-94F9-F9CF5B477F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39622918-5A02-4C4E-94F9-F9CF5B477F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C73498-C133-4B84-B19F-95377DEB7465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C73498-C133-4B84-B19F-95377DEB7465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C73498-C133-4B84-B19F-95377DEB7465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C73498-C133-4B84-B19F-95377DEB7465}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,80 @@
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponGateway.dll.config
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponGateway.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponGateway.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\Antlr3.Runtime.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\Newtonsoft.Json.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Net.Http.Formatting.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Helpers.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Http.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Http.WebHost.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Mvc.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Optimization.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Razor.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.WebPages.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.WebPages.Razor.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\WebGrease.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\EntityFramework.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\Newtonsoft.Json.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Net.Http.Formatting.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Helpers.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Http.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Http.WebHost.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Mvc.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Optimization.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.Razor.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.WebPages.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\System.Web.WebPages.Razor.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\Antlr3.Runtime.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\EntityFramework.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\obj\Debug\CouponGateway.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\obj\Debug\CouponGateway.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\EntityFramework.SqlServer.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\EntityFramework.SqlServer.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponModel.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponModel.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\obj\Debug\CouponGateway.csprojResolveAssemblyReference.cache
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponBusiness.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponGateway\bin\CouponBusiness.pdb
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponGateway.dll.config
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponGateway.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponGateway.pdb
+D:\Azure相关内容\Coupon\CouponGateway\bin\Antlr3.Runtime.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponBusiness.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponModel.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\EntityFramework.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\EntityFramework.SqlServer.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\Microsoft.Web.Infrastructure.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\Newtonsoft.Json.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Net.Http.Formatting.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Helpers.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Http.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Http.WebHost.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Mvc.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Optimization.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Razor.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.WebPages.Deployment.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.WebPages.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.WebPages.Razor.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\WebGrease.dll
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponBusiness.pdb
+D:\Azure相关内容\Coupon\CouponGateway\bin\CouponModel.pdb
+D:\Azure相关内容\Coupon\CouponGateway\bin\EntityFramework.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\EntityFramework.SqlServer.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\Newtonsoft.Json.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Net.Http.Formatting.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Helpers.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Http.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Http.WebHost.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Mvc.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Optimization.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.Razor.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.WebPages.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.WebPages.Deployment.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\System.Web.WebPages.Razor.xml
+D:\Azure相关内容\Coupon\CouponGateway\bin\Antlr3.Runtime.pdb
+D:\Azure相关内容\Coupon\CouponGateway\obj\Debug\CouponGateway.csprojResolveAssemblyReference.cache
+D:\Azure相关内容\Coupon\CouponGateway\obj\Debug\CouponGateway.dll
+D:\Azure相关内容\Coupon\CouponGateway\obj\Debug\CouponGateway.pdb

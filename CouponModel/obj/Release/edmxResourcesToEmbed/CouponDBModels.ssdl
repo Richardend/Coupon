@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CouponDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alliance">
+    <Key>
+      <PropertyRef Name="AllianceID" />
+    </Key>
+    <Property Name="AllianceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AllianceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AllianceContract" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="AIDStatus" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AllianceSID">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="AllianceID" />
+    </Key>
+    <Property Name="SID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AllianceID" Type="int" Nullable="false" />
+    <Property Name="SIDName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SIDStatus" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RequestKey" Type="varchar" MaxLength="20" />
+    <Property Name="RequestRules" Type="varchar" MaxLength="500" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvinceID" Type="tinyint" Nullable="false" />
+    <Property Name="CountryID" Type="tinyint" Nullable="false" />
+    <Property Name="CityEn" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryEn" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CountryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+    <Property Name="Count" Type="int" Nullable="false" />
+    <Property Name="ActualAmount" Type="money" Nullable="false" />
+    <Property Name="ActualCurrencyID" Type="tinyint" Nullable="false" />
+    <Property Name="cost" Type="money" Nullable="false" />
+    <Property Name="costCurrencyID" Type="tinyint" Nullable="false" />
+    <Property Name="PaymentID" Type="tinyint" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order_CardCode">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="bigint" Nullable="false" />
+    <Property Name="CardCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Status" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order_Code">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="CardNo" />
+    </Key>
+    <Property Name="OrderID" Type="bigint" Nullable="false" />
+    <Property Name="CardNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Status" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PaymentInfo">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="tinyint" Nullable="false" />
+    <Property Name="PaymentName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="ProvinceID" />
+    </Key>
+    <Property Name="ProvinceID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryID" Type="tinyint" Nullable="false" />
+    <Property Name="ProvinceEn" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProvinceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="ResourceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeID" Type="tinyint" Nullable="false" />
+    <Property Name="StoreType" Type="tinyint" Nullable="false" />
+    <Property Name="ShowName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AreaType" Type="tinyint" Nullable="false" />
+    <Property Name="CountryID" Type="tinyint" Nullable="false" />
+    <Property Name="ProvinceID" Type="tinyint" Nullable="false" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="PriceCurrencyID" Type="tinyint" Nullable="false" />
+    <Property Name="SalePrice" Type="money" Nullable="false" />
+    <Property Name="SalePriceCurrencyID" Type="tinyint" Nullable="false" />
+    <Property Name="Status" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="IsEnable" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Resource_SID_List">
+    <Key>
+      <PropertyRef Name="SID" />
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="SID" Type="int" Nullable="false" />
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+    <Property Name="ResSIDStatus" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="SettlementPrice" Type="money" Nullable="false" />
+    <Property Name="SettlementPriceCurrencyID" Type="tinyint" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Resource_Store">
+    <Key>
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="ResourceID" />
+    </Key>
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CurrencyName" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceRepertory">
+    <Key>
+      <PropertyRef Name="ResourceID" />
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+    <Property Name="SID" Type="int" Nullable="false" />
+    <Property Name="RepertoryNum" Type="int" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StoreInfo">
+    <Key>
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="StoreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreAdrr" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="StoreName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AreaType" Type="tinyint" Nullable="false" />
+    <Property Name="CountryID" Type="tinyint" Nullable="false" />
+    <Property Name="ProvinceID" Type="tinyint" Nullable="false" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+    <Property Name="LongitudeGMap" Type="decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="LatitudeGMap" Type="decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="LongitudeBMap" Type="decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="LatitudeBMap" Type="decimal" Precision="20" Scale="15" Nullable="false" />
+    <Property Name="DataChange_LastTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataChange_CreateTime" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CouponDBModelStoreContainer">
+    <EntitySet Name="Alliance" EntityType="Self.Alliance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AllianceSID" EntityType="Self.AllianceSID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order_CardCode" EntityType="Self.Order_CardCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order_Code" EntityType="Self.Order_Code" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentInfo" EntityType="Self.PaymentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Province" EntityType="Self.Province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Resource" EntityType="Self.Resource" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Resource_SID_List" EntityType="Self.Resource_SID_List" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Resource_Store" EntityType="Self.Resource_Store" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResourceCurrency" EntityType="Self.ResourceCurrency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResourceRepertory" EntityType="Self.ResourceRepertory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResourceType" EntityType="Self.ResourceType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreInfo" EntityType="Self.StoreInfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

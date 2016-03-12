@@ -1,0 +1,9 @@
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Release\CouponBusiness.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Release\CouponBusiness.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Release\CouponModel.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Release\EntityFramework.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Release\CouponModel.pdb
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\bin\Release\EntityFramework.xml
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\obj\Release\CouponBusiness.csprojResolveAssemblyReference.cache
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\obj\Release\CouponBusiness.dll
+C:\Users\JeffreyXu\Documents\Visual Studio 2013\Projects\2016年创业项目源代码\Coupon\CouponBusiness\obj\Release\CouponBusiness.pdb
